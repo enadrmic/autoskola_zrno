@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Autoškola ZRNO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Autoškola ZRNO.png" alt="logo" height="60px" width="10px"></a>
+            <div class="sub-headerlinks" id="sub-headerLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="onama.html">O NAMA</a></li>
+                    <li><a href="program.html">PROGRAM</a></li>
+                    <li><a href="onlinetestovi.html">ONLINE TESTOVI</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!--  sadrzaj O NAMA stranice  -->
+    <section class="o-nama">
+        <div class="row">
+            <div class="onama-col">
+
+                <h1>Autoškola ZRNO</h1>
+                <h2>Instruktor Bojan Drmić</h2>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+                    provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum
+                    fuga. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                    voluptatum deleniti atque corrupti quos.</p>
+                <a href="kontakt.html" class="hero-btn red-btn">PRIJAVI SE SADA</a>
+            </div>
+            <div class="onama-col">
+                <!-- Image Slider Start -->
+                <div class="slider">
+                    <div class="slides">
+                        <!-- Radio Button Start  -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <!-- Radio Button Close  -->
+
+                        <!-- Slide Image Start -->
+                        <div class="slide first">
+                            <img src="images/onamastart.jpeg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/kontaktforma.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/galerija1.png" alt="">
+                        </div>
+                        <!-- Slide Image Close -->
+                    </div>
+                    <!-- Automatic Navigation Start -->
+                    <div>
+                        <div class="auto-btn-1"></div>
+                        <div class="auto-btn-2"></div>
+                        <div class="auto-btn-3"></div>
+                    </div>
+                    <!-- Automatic Navigation Close -->
+                </div>
+                <!-- Slides Close -->
+                <!-- Mannual Navigation Start -->
+                <div class="navigation-mannual">
+                    <label for="radio1" class="mannual-btn"></label>
+                    <label for="radio2" class="mannual-btn"></label>
+                    <label for="radio3" class="mannual-btn"></label>
+                </div>
+                <!-- Mannual Navigation Close -->
+            </div>
+            <!-- Image Slider Close -->
+            <script>
+                var counter = 1;
+                setInterval(function () {
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+
+                    if (counter > 3) {
+                        counter = 1
+                    }
+
+                }, 5000);
+            </script>
+        </div>
+
+        <!-- Sekcija TKO SMO MI -->
+        <section class="tkosmomi">
+            <div class="container2">
+                <h1>Zašto izabrati nas?</h1>
+
+                <div class="row">
+                    <div class="course-col">
+                        <img src="images/ikonice.png" width="100px">
+                        <h3>Teorijska nastava</h3>
+                        <p>Quisque odio est, porta quis tortor sit amet, vulputate varius urna. Praesent nulla urna,
+                            vestibulum blandit nunc ultrices, luctus molestie magna.</p>
+                    </div>
+                    <div class="course-col">
+                        <img src="images/ikonice kopija.png" width="100px">
+                        <h3>Pouzdana vozila</h3>
+                        <p>Quisque odio est, porta quis tortor sit amet, vulputate varius urna. Praesent nulla urna,
+                            vestibulum blandit nunc ultrices, luctus molestie magna.</p>
+                    </div>
+                    <div class="course-col">
+                        <img src="images/ikonice kopija 2.png" width="100px">
+                        <h3>Fleksibilni termini</h3>
+                        <p>Quisque odio est, porta quis tortor sit amet, vulputate varius urna. Praesent nulla urna,
+                            vestibulum blandit nunc ultrices, luctus molestie magna.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="course-col">
+                        <img src="images/ikonice kopija 3.png" width="100px">
+                        <h3>Iskusni instruktori</h3>
+                        <p>Quisque odio est, porta quis tortor sit amet, vulputate varius urna. Praesent nulla urna,
+                            vestibulum blandit nunc ultrices, luctus molestie magna.</p>
+                    </div>
+                    <div class="course-col">
+                        <img src="images/ikonice kopija 4.png" width="100px">
+                        <h3>Povoljna cijena</h3>
+                        <p>Quisque odio est, porta quis tortor sit amet, vulputate varius urna. Praesent nulla urna,
+                            vestibulum blandit nunc ultrices, luctus molestie magna.</p>
+                    </div>
+                    <div class="course-col">
+                        <img src="images/ikonice kopija 5.png" width="100px">
+                        <h3>Kategorije</h3>
+                        <p>Quisque odio est, porta quis tortor sit amet, vulputate varius urna. Praesent nulla urna,
+                            vestibulum blandit nunc ultrices, luctus molestie magna.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+
+            <h1>Uvjerite se da smo mi prava opcija!</h1>
+            <a href="kontakt.html" class="hero-btn">KONTAKTIRAJTE NAS!</a>
+
+        </section>
+
+
+        <!-- section Footer -->
+        <section class="footer">
+            <img src="images/Autoškola ZRNO.png" width="200px">
+            <h4>Autoškola ZRNO</h4>
+            <div class="icons">
+                <i class="fa fa-facebook" style="font-size: 30px"></i>
+                <i class="fa fa-instagram" style="font-size: 30px"></i>
+                <i class="fa fa-phone" style="font-size: 30px"></i>
+            </div>
+
+
+
+
+
+
+            <!-- Javascript za Menu na mobilnim uredajima -->
+            <script>
+
+                var navLinks = document.getElementById("navLinks");
+
+                function showMenu() {
+                    navLinks.style.right = "0";
+                }
+                function hideMenu() {
+                    navLinks.style.right = "-200px";
+                }
+
+            </script>
+
+</body>
+
+</html>

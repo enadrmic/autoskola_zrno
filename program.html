@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Autoškola ZRNO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/Autoškola ZRNO.png" alt="logo" height="50px" width="10px"></a>
+            <div class="sub-headerlinks" id="sub-headerLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="onama.html">O NAMA</a></li>
+                    <li><a href="program.html">PROGRAM</a></li>
+                    <li><a href="onlinetestovi.html">ONLINE TESTOVI</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Program -->
+
+    <section class="program">
+        <div class="container1">
+            <h1>NAŠ PROGRAM</h1>
+            <p style="color: black">Pellentesque tincidunt ac leo hendrerit finibus. Donec in magna in lacus tristique
+                iaculis a eu purus.</p>
+
+            <div class="row">
+                <div class="program-col">
+                    <img src="images/kategorijaa.jpg">
+                    <div class="layer">
+                        <h3>Kategorija A</h3>
+                    </div>
+                </div>
+                <div class="program-col">
+                    <img src="images/kategorijab.jpg">
+                    <div class="layer">
+                        <h3>Kategorija B i B2</h3>
+                    </div>
+                </div>
+                <div class="program-col">
+                    <img src="images/kategorijac.jpg">
+                    <div class="layer">
+                        <h3>Kategorija C i CE</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="rezervacije">
+        <div class="container1">
+            <h1>Što brojke govore o nama?</h1>
+
+            <div class="row">
+                <div class="reservation-left">
+                    <img src="images/analiza.jpg">
+
+                </div>
+                <div class="reservation-right">
+                    <h3>Analiza prethodnih godina</h3>
+                    <div>
+                        <span>2014. godina</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>2015. godina</span>
+                        <span>24</span>
+                    </div>
+                    <div>
+                        <span>2016. godina</span>
+                        <span>65</span>
+                    </div>
+                    <div>
+                        <span>2017. godina</span>
+                        <span>55</span>
+                    </div>
+                    <div>
+                        <span>2019. godina</span>
+                        <span>41</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <div class="container1">
+            <h1>Kako to sve izgleda?</h1>
+            <p style="color: black">Pellentesque tincidunt ac leo hendrerit finibus. Donec in magna in lacus tristique
+                iaculis a eu purus.</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/izgled1.jpeg">
+                </div>
+                <div class="facilities-col">
+                    <img src="images/izgled2.jpeg">
+                </div>
+                <div class="facilities-col">
+                    <img src="images/izgled3.jpeg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section Footer -->
+    <section class="footer">
+        <img src="images/Autoškola ZRNO.png" width="200px">
+        <h4>Autoškola ZRNO</h4>
+        <div class="icons">
+            <i class="fa fa-facebook" style="font-size: 30px"></i>
+            <i class="fa fa-instagram" style="font-size: 30px"></i>
+            <i class="fa fa-phone" style="font-size: 30px"></i>
+        </div>
+
+        <p class="deltico">&copy; Copyright DELTICO digital d.o.o. 2022</p>
+        <p class="deltico">Sva prava zadržana.</p>
+
+
+
+
+        <!-- Javascript za Menu na mobilnim uredajima -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+</body>
+
+</html>
